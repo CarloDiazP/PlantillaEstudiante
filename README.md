@@ -56,3 +56,17 @@
 </<tr>
 </tdbody>
 </table>
+<table>
+<tr>SOLUCIÓN Y RESULTADOS</tr>
+<tr>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS</tr>
+<tr>II. SOLUCIÓN DEL CUESTIONARIO</tr>
+<tr>III. CONCLUSIONES</tr>
+</table>
+<table>
+<tr>RETROALIMENTACIÓN GENERAL</tr>
+<tr>I. RETROALIMENTACIÓN:</tr>
+</table>
+<table>
+<tr>REFERENCIAS Y BIBLIOGRAFÍA</tr>
+<tr>I. BIBLIOGRAFÍA</tr>
+</table>
