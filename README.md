@@ -19,8 +19,8 @@
 </div>
 
 <div align="center">
-<span style="font-weight:bold;">GUÍA DE LABORATORIO</span><br />
-<span>(formato docente)</span>
+<span style="font-weight:bold;">INFORME DE LABORATORIO</span><br />
+<span>(formato estudiante)</span>
 </div>
 
 
@@ -35,14 +35,18 @@
 <td>NÚMERO DE PRÁCTICA:</td><td>01</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
 </tr>
 <tr>
-<td>FECHA INICIO::</td><td>25-Abr-2022</td><td>FECHA FIN:</td><td>29-Abr-2022</td><td>DURACIÓN:</td><td>04 horas</td>
+<td>FECHA DE PRESENTACIÓN:</td><td>29-Abr-2022</td><td>HORA DE PRESENTACIÓN:</td><td>Hora que presentemos</td>
 </tr>
-<tr><td colspan="6">RECURSOS A UTILIZAR:
+<tr><td colspan="6">INTEGRANTE (s):
 <ul>
-<li><a href="https://guides.github.com/">https://guides.github.com/</a></li>
-<li><a href="https://git-scm.com/book/es/v2">https://git-scm.com/book/es/v2</a></li>
+<li>Diaz/Portilla, Carlo Rodrigo</li>
+<li>Moroccoire/Pacompia, Anthony Marcos</li>
+<li>Ticona/Hareth, Anthony Joaquín</li>
+<li>Almonte/Cuba, Axel Frank</li>
+<li>Falta uno</li>
 </ul>
 </td>
+<td>NOTA:</td><td>Pendiente</td>
 </<tr>
 <tr><td colspan="6">DOCENTES:
 <ul>
