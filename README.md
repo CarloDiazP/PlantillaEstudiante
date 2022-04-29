@@ -62,9 +62,9 @@
 </theader>
 <tbody>
 <tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS</td></tr>
-<tr><td>II. SOLUCIÓN DEL CUESTIONARIO
-A. ¿Por qué Git es una herramienta importante en el curso de Programación Web 2?
-Respuesta: </td></tr>
+<tr><td>II. SOLUCIÓN DEL CUESTIONARIO<br>
+A. ¿Por qué Git es una herramienta importante en el curso de Programación Web 2?<br>
+Respuesta: <br></td></tr>
 <tr><td>III. CONCLUSIONES</td></tr>
 </tbody>
 </table>
