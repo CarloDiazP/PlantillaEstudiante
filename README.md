@@ -62,7 +62,9 @@
 </theader>
 <tbody>
 <tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS</td></tr>
-<tr><td>II. SOLUCIÓN DEL CUESTIONARIO</td></tr>
+<tr><td>II. SOLUCIÓN DEL CUESTIONARIO
+A. ¿Por qué Git es una herramienta importante en el curso de Programación Web 2?
+Respuesta: </td></tr>
 <tr><td>III. CONCLUSIONES</td></tr>
 </tbody>
 </table>
@@ -79,6 +81,10 @@
 <tr><th>REFERENCIAS Y BIBLIOGRAFÍA</th></tr>
 </theader>
 <tbody>
-<tr><td>I. BIBLIOGRAFÍA</td></tr>
+<tr><td>I. BIBLIOGRAFÍA
+<ul>
+<li>https://git-scm.com/book/es/v2</li>
+</ul>
+</td></tr>
 </tbody>
 </table>
