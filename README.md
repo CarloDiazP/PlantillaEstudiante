@@ -47,7 +47,7 @@
 </ul>
 </td>
 <td>NOTA:</td><td>Pendiente</td>
-</<tr>
+</tr>
 <tr><td colspan="6">DOCENTES:
 <ul>
 <li>Richart Smith Escobedo Quispe (rescobedoq@unsa.edu.pe)</li>
