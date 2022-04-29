@@ -37,7 +37,7 @@
 <tr>
 <td>FECHA DE PRESENTACIÓN:</td><td>29-Abr-2022</td><td>HORA DE PRESENTACIÓN:</td><td>Hora que presentemos</td>
 </tr>
-<tr><td colspan="6">INTEGRANTE (s):
+<tr><td colspan="4">INTEGRANTE (s):
 <ul>
 <li>Diaz/Portilla, Carlo Rodrigo</li>
 <li>Moroccoire/Pacompia, Anthony Marcos</li>
