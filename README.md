@@ -46,7 +46,7 @@
 <li>Falta uno</li>
 </ul>
 </td>
-<td>NOTA:</td><td>Pendiente</td>
+<td colspan="6">NOTA:</td><td colspan="6">Pendiente</td>
 </<tr>
 <tr><td colspan="6">DOCENTES:
 <ul>
