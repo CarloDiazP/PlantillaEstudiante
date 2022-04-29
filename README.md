@@ -53,20 +53,20 @@
 <li>Richart Smith Escobedo Quispe (rescobedoq@unsa.edu.pe)</li>
 </ul>
 </td>
-</<tr>
-</tdbody>
+</tr>
+</tbody>
 </table>
 <table>
-<tr>SOLUCIÓN Y RESULTADOS</tr>
-<tr>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS</tr>
-<tr>II. SOLUCIÓN DEL CUESTIONARIO</tr>
-<tr>III. CONCLUSIONES</tr>
+<tr><th>SOLUCIÓN Y RESULTADOS</th></tr>
+<tr><th>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS</th></tr>
+<tr><th>II. SOLUCIÓN DEL CUESTIONARIO</th></tr>
+<tr><th>III. CONCLUSIONES</th></tr>
 </table>
 <table>
-<tr>RETROALIMENTACIÓN GENERAL</tr>
-<tr>I. RETROALIMENTACIÓN:</tr>
+<tr><th>RETROALIMENTACIÓN GENERAL</th></tr>
+<tr><th>I. RETROALIMENTACIÓN:</th></tr>
 </table>
 <table>
-<tr>REFERENCIAS Y BIBLIOGRAFÍA</tr>
-<tr>I. BIBLIOGRAFÍA</tr>
+<tr><th>REFERENCIAS Y BIBLIOGRAFÍA</th></tr>
+<tr><th>I. BIBLIOGRAFÍA</th></tr>
 </table>
