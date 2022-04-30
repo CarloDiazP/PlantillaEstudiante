@@ -69,10 +69,28 @@ A. Repositorios del trabajo individual:
 <li>https://github.com/AxelAlmonteCuba/pwb2</li>
 <li>https://github.com/ianthony4/Pweb2</li>
 </ul>
+B. Solución trabajo grupal:<br>
+1. Para iniciar, un integrante creó un repositorio GitHub en el que todos trabajarán en sus respectivas ramas
+2. Luego el dueño del repositorio crea un archivo base <code>Calculadora.java</code> del cual los demás integrantes crearon ramas para poder trabajar las funciones les fueron asignadas.
+<img src='./labImg/commitBase.jpeg'>
+<img src='./labImg/vimCalculadoraBase.jpeg'>
+3. Cada integrante creo su propia rama la cual llamaron por su nombre GitHub
+<img src='./labImg/gitBranchEjemplo.jpeg'>
+4. Cada integrante hizo commit de su función asignada
+<img src='./labImg/carloDiazCommit.jpeg'>
+<img src='./labImg/axelAlmonteCommit.jpeg'>
+<img src='./labImg/joaquinTiconaCommit.jpeg'>
+<img src='./labImg/leonelChaisaCommit.jpeg'>
+<img src='./labImg/marcosMoroccoireCommit.jpeg'>
+5. Luego de hacer los commits, se realizó un push a cada una de las ramas
+<img src='./labImg/ramasNoMerge.jpeg'>
+6. Para finalizar, se hizo merge de todas las ramas con la rama principal <code>main</code>.
+<img src='./labImg/ramasMerge.jpeg'>
 </td></tr>
 <tr><td>II. SOLUCIÓN DEL CUESTIONARIO<br>
 A. ¿Por qué Git es una herramienta importante en el curso de Programación Web 2?<br>
-Respuesta: <br></td></tr>
+Respuesta: <br>
+Porque facilita la creación de programas de manera grupal, promoviendo el trabajo colaborativo, pudiendo trabajar asíncronamente en la creación y ejecución de proyectos, además de otorgar infinitas posibilidades con la revisión y el seguimiento del programa entre los miembros de un grupo, y proporcionar una relación docente - estudiante clara y sencilla.</td></tr>
 <tr><td>III. CONCLUSIONES</td></tr>
 </tbody>
 </table>
