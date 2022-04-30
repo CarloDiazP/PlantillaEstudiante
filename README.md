@@ -43,7 +43,7 @@
 <li>Moroccoire/Pacompia, Anthony Marcos</li>
 <li>Ticona/Hareth, Anthony Joaquín</li>
 <li>Almonte/Cuba, Axel Frank</li>
-<li>Falta uno</li>
+<li>Chaisa/Fernández, Anthony Leonel</li>
 </ul>
 </td>
 <td>NOTA:</td><td>Pendiente</td>
