@@ -61,7 +61,15 @@
 <tr><th>SOLUCIÓN Y RESULTADOS</th></tr>
 </theader>
 <tbody>
-<tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS</td></tr>
+<tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS<br>
+A. Repositorios del trabajo individual:
+<ul>
+<li>https://github.com/CarloDiazP/laboratorio01</li>
+<li>https://github.com/AnthonyMTH/primero</li>
+<li>https://github.com/AxelAlmonteCuba/pwb2</li>
+<li>https://github.com/ianthony4/Pweb2</li>
+</ul>
+</td></tr>
 <tr><td>II. SOLUCIÓN DEL CUESTIONARIO<br>
 A. ¿Por qué Git es una herramienta importante en el curso de Programación Web 2?<br>
 Respuesta: <br></td></tr>
