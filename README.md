@@ -68,6 +68,7 @@ A. Repositorios del trabajo individual:
 <li>https://github.com/AnthonyMTH/primero</li>
 <li>https://github.com/AxelAlmonteCuba/pwb2</li>
 <li>https://github.com/ianthony4/Pweb2</li>
+<li>https://github.com/amoroccoire/pw2.git</li>
 </ul>
 B. Solución trabajo grupal:<br>
 <br>1. Para iniciar, un integrante creó un repositorio GitHub en el que todos trabajarán en sus respectivas ramas
@@ -91,7 +92,16 @@ B. Solución trabajo grupal:<br>
 A. ¿Por qué Git es una herramienta importante en el curso de Programación Web 2?<br>
 Respuesta: <br>
 Porque facilita la creación de programas de manera grupal, promoviendo el trabajo colaborativo, pudiendo trabajar asíncronamente en la creación y ejecución de proyectos, además de otorgar infinitas posibilidades con la revisión y el seguimiento del programa entre los miembros de un grupo, y proporcionar una relación docente - estudiante clara y sencilla.</td></tr>
-<tr><td>III. CONCLUSIONES</td></tr>
+<tr><td>III. CONCLUSIONES
+<ul>
+<li>
+Git es una herramienta bastante útil para el aprendizaje, ya que permite el fácil intercambio de información entre programadores de todo el mundo.
+</li>
+<li>
+El trabajo en equipo en Git es óptimo. Si bien puede ser algo complejo al principio, cuando se llega a entender las conexiones, el funcionamiento entre las ramas, el trabajo grupal se torna sencillo, agradable y funcional.
+</li>
+</ul>
+</td></tr>
 </tbody>
 </table>
 <table>
