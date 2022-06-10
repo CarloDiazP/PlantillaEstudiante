@@ -170,6 +170,93 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
         Applying sessions.0001_initial... OK
     ```
     Notaremos que nos aparece los <code>... OK</code>, entonces la base de datos está lista, también nos crea un nuevo archivo <code>db.sqlite3</code> el cual también agregaremos al archivo <code>.gitignore</code>.
+
+* Paso 7: **Creación de la aplicación**
+
+    En este paso vamos a crear una aplicación <code>blog</code>, entonces para crearla usaremos <code>startapp</code>:
+    ```sh
+        ❯ python manage.py startapp blog
+    ```
+    Este comando va a crear <code>startapp</code> una aplicación y para indicar el nombre usaremos <code>blog</code>.
+    Notaremos que se ha creado un nuevo directorio con la siguiente estructura:
+    ```sh
+        blog
+        ├── __init__.py
+        ├── admin.py
+        ├── apps.py
+        ├── migrations
+        │   └── __init__.py
+        ├── models.py
+        ├── tests.py
+        └── views.py
+    ```
+    Debido a que es una aplicación nueva, tenemos que indicar a Django que vamos a utilizarla, para esto vamos a editar el archivo <code>mysite/settings.py</code>:
+    ```python
+        INSTALLED_APPS = [
+            'django.contrib.admin',
+            'django.contrib.auth',
+            'django.contrib.contenttypes',
+            'django.contrib.sessions',
+            'django.contrib.messages',
+            'django.contrib.staticfiles',
+            'blog.apps.BlogConfig',
+        ]
+    ```
+    
+* Paso 8: **Creación del modelo Post**
+
+    Ahora vamos a definir las entradas de cada Post que hagamos en nuestro blog, para eso editaremos el archivo <code>blog/models.py</code>:
+    ```sh
+        ❯ vim .\blog\models.py
+    ```
+    ```python
+        from django.db import models
+        from django.conf import settings
+        from django.utils import timezone
+
+        # Create your models here.
+
+        class Post(models.Model):
+            author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+            title = models.CharField(max_length=200)
+            text = models.TextField()
+            created_date = models.DateTimeField(
+                    default=timezone.now)
+            published_date = models.DateTimeField(
+                    blank=True, null=True)
+
+            def publish(self):
+                self.published_date = time.now()
+                self.save()
+
+            def __str__(self):
+                return self.title
+    ```
+    Entonces, para cada entrada de nuestro blog tendrá un autor, titulo, texto y la fecha en la que se creó.
+
+* Paso 9: **Agregando los nuevos modelos**
+
+    Para agregar el nuevo modelo Post que acabamos de crear tendremos que ejecutar <code>makemigrations</code> y luego <code>migrate</code> de la siguiente manera:
+    ```sh
+        ❯ python manage.py makemigrations blog
+    ```
+    Aquí se preparó un archivo de migración y está listo para realizar un <code>migrate</code>:
+    ```sh
+        ❯ python manage.py migrate blog
+    ```
+    Vamos a saber que ya está listo por el <code>... OK</code>
+
+* Paso 10: **Registrar el modelo en admin**
+
+    Vamos a registrar el modelo Post en el admin de Django, para poder crear nuevas entradas en nuestro blog. Para eso vamos a editar el archivo <code>blog/admin.py</code> y lo registramos:
+    ```sh
+        ❯ vim .\blog\admin.py
+    ```
+    ```python
+        ...
+        admin.site.register(Post)
+        ...
+    ```
 ---
 
 II. SOLUCIÓN DEL CUESTIONARIO
