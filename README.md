@@ -30,20 +30,20 @@
 </theader>
 <tbody>
 <tr><td>ASIGNATURA:</td><td colspan="5">Programación Web 2</td></tr>
-<tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5">Git - GitHub</td></tr>
+<tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5">Django</td></tr>
 <tr>
-<td>NÚMERO DE PRÁCTICA:</td><td>01</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
+<td>NÚMERO DE PRÁCTICA:</td><td>05</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
 </tr>
 <tr>
-<td>FECHA DE PRESENTACIÓN:</td><td colspan="2">29-Abr-2022</td><td>HORA DE PRESENTACIÓN:</td><td colspan="2">9:30</td>
+<td>FECHA DE PRESENTACIÓN:</td><td colspan="2">12-Jun-2022</td><td>HORA DE PRESENTACIÓN:</td><td colspan="2">11:55</td>
 </tr>
 <tr><td colspan="4">INTEGRANTE (s):
 <ul>
 <li>Diaz/Portilla, Carlo Rodrigo</li>
-<li>Moroccoire/Pacompia, Anthony Marcos</li>
+<li>-</li>
 <li>Ticona/Hareth, Anthony Joaquín</li>
-<li>Almonte/Cuba, Axel Frank</li>
-<li>Chaisa/Fernández, Anthony Leonel</li>
+<li>-</li>
+<li>-</li>
 </ul>
 </td>
 <td>NOTA:</td><td>Pendiente</td>
@@ -56,71 +56,156 @@
 </tr>
 </tbody>
 </table>
-<table>
-<theader>
-<tr><th>SOLUCIÓN Y RESULTADOS</th></tr>
-</theader>
-<tbody>
-<tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS<br>
-A. Repositorios del trabajo individual:
+
+<!-- Reportes -->
+
+## SOLUCIÓN Y RESULTADOS
+
+---
+
+I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
+* La organización del repositorio es la siguiente
+    ```sh
+	   └───Laboratorio5-Pweb2
+	    │
+	    ├───E
+	    │
+	    ├───E
+	    │
+	    └───E
+    ```
+* Paso 1: **Agregar .gitignore**
+    
+    Para empezar con el repositorio, se agrega un archivo <code>.gitignore</code> con las siguientes rutas, especificadas en https://github.com/django/django/blob/main/.gitignore.
+    ```sh
+        *.egg-info
+        *.pot
+        *.py[co]
+        .tox/
+        __pycache__
+        MANIFEST
+        dist/
+        docs/_build/
+        docs/locale/
+        node_module/
+        test/coverage_html/
+        test/.coverage
+        build/
+        test/report/
+    ```
+    Estos serán los archivos que no necesitamos hacer <code>git add</code> y <code>git commit</code>
+
+* Paso 2: **Activación del entorno virtual**
+
+    Para activar el entorno virtual usaremos <code>virtualenv</code> indicando que será un entorno virtual para python3, ejecutaremos el siguiente comando.
+    ```sh
+        ❯ virtualenv -p python3 .
+    ```
+    Este comando va a crear 2 carpetas <code>Lib/</code> y <code>Scripts/</code> y un archivo <code>pyvenv.cfg</code>. Agregamos <code>Lib/</code> y <code>Scripts/</code> al archivo <code>.gitignore</code> ya que estos varian dependiendo del sistema operativo y solo conservaremos haremos commit del archivo <code>pyvenv.cfg</code>.
+    Activaremos el entorno virtual (Windows) con el siguiente comando:
+    ```sh
+        ❯ .\Scripts\activate.ps1
+    ```
+    
+* Paso 3: **Instalación Django**
+
+    Una vez con el entorno virtual activado, ejecutaremos el comando que instala Django:
+    ```sh
+        ❯ pip install Django
+    ```
+    Ahora para estar seguros de que nuestro entorno virtual tiene Django, usaremos el comando <code>pip freeze</code> y ahora notamos la versión de Django:
+    ```sh
+        ❯ pip freeze
+        asgiref==3.5.2
+        Django==4.0.5
+        sqlparse==0.4.2
+        tzdata==2022.1
+    ```
+
+* Paso 4: **Creación del proyecto**
+
+    Para crear el proyecto con Django, usaremos el siguiente comando:
+    ```sh
+        ❯ django-admin startproject mysite .
+    ```
+    Donde indicamos que vamos a crear un proyecto <code>startproject</code> que se va a llamar <code>mysite</code> y el <code>.</code> indicará que lo va a crear en el directorio actual.
+    Notamos que se ha creado un archivo <code>manage.py</code> y un directorio que tiene el nombre de nuestro proyecto <code>mysite</code>.
+
+* Paso 5: **Cambiar la configuración**
+
+    A continuación editaremos el archivo <code>vim mysite/settings.py</code> y vamos a cambiar la zona horaria y el idioma.
+    ```python
+        ...
+        LANGUAGE_CODE = 'es'
+
+        TIME_ZONE = 'America/Lima'
+        ...
+    ```
+
+* Paso 6: **Configurar la base de datos**
+
+    Asegurándonos que nos encontramos en el ruta actual del archivo <code>manage.py</code>, vamos a ejecutar el siguiente comando para crear una base de datos en nuestro blog:
+    ```sh
+        ❯ python manage.py migrate
+        Operations to perform:
+        Apply all migrations: admin, auth, contenttypes, sessions
+        Running migrations:
+        Applying contenttypes.0001_initial... OK
+        Applying auth.0001_initial... OK
+        Applying admin.0001_initial... OK
+        Applying admin.0002_logentry_remove_auto_add... OK
+        Applying admin.0003_logentry_add_action_flag_choices... OK
+        Applying contenttypes.0002_remove_content_type_name... OK
+        Applying auth.0002_alter_permission_name_max_length... OK
+        Applying auth.0003_alter_user_email_max_length... OK
+        Applying auth.0004_alter_user_username_opts... OK
+        Applying auth.0005_alter_user_last_login_null... OK
+        Applying auth.0006_require_contenttypes_0002... OK
+        Applying auth.0007_alter_validators_add_error_messages... OK
+        Applying auth.0008_alter_user_username_max_length... OK
+        Applying auth.0009_alter_user_last_name_max_length... OK
+        Applying auth.0010_alter_group_name_max_length... OK
+        Applying auth.0011_update_proxy_permissions... OK
+        Applying auth.0012_alter_user_first_name_max_length... OK
+        Applying sessions.0001_initial... OK
+    ```
+    Notaremos que nos aparece los <code>... OK</code>, entonces la base de datos está lista, también nos crea un nuevo archivo <code>db.sqlite3</code> el cual también agregaremos al archivo <code>.gitignore</code>.
+---
+
+II. SOLUCIÓN DEL CUESTIONARIO
+
+* ¿Cuál es un estándar de codificación para Python? Ejemplo: Para PHP en el proyecto Pear https://pear.php.net/manual/en/standards.php
+  
+  
+
+* ¿Qué diferencias existen entre EasyInstall, pip y PyPM?
+
+  
+
+* En un proyecto Django que se debe ignorar para usar git. Vea: https://github.com/django/django/blob/main/.gitignore. ¿Qué otros tipos de archivos se deberían agregar a este archivo?
+
+  
+  
+* Utilice <code>python manage.py shell</code> para agregar objetos. ¿Qué archivos se modificaron al agregar más objetos?
+
+  
+  
+---
+
+III. CONCLUSIONES
+
+- 
+    
+---
+    
+## RETROALIMENTACIÓN GENERAL
+ <pre>
+ 
+ </pre>
+---
+    
+### REFERENCIAS Y BIBLIOGRAFÍA
 <ul>
-<li>https://github.com/CarloDiazP/laboratorio01</li>
-<li>https://github.com/AnthonyMTH/primero</li>
-<li>https://github.com/AxelAlmonteCuba/pwb2</li>
-<li>https://github.com/ianthony4/Pweb2</li>
-<li>https://github.com/amoroccoire/pw2.git</li>
+    <li>https://tutorial.djangogirls.org/es/django_start_project/</li>
+    <li>https://github.com/django/django/blob/main/.gitignore</li>
 </ul>
-B. Solución trabajo grupal:<br>
-<br>1. Para iniciar, un integrante creó un repositorio GitHub en el que todos trabajarán en sus respectivas ramas
-<br>2. Luego el dueño del repositorio crea un archivo base <code>Calculadora.java</code> del cual los demás integrantes crearon ramas para poder trabajar las funciones les fueron asignadas.
-<img src='./labImg/commitBase.jpeg'>
-<img src='./labImg/vimCalculadoraBase.jpeg'><br>
-<br>3. Cada integrante creo su propia rama la cual llamaron por su nombre GitHub
-<img src='./labImg/gitBranchEjemplo.jpeg'>
-<br>4. Cada integrante hizo commit de su función asignada
-<img src='./labImg/carloDiazCommit.jpeg'>
-<img src='./labImg/axelAlmonteCommit.jpeg'>
-<img src='./labImg/joaquinTiconaCommit.jpeg'>
-<img src='./labImg/leonelChaisaCommit.jpeg'>
-<img src='./labImg/marcosMoroccoireCommit.jpeg'><br>
-<br>5. Luego de hacer los commits, se realizó un push a cada una de las ramas
-<img src='./labImg/ramasNoMerge.jpeg'>
-<br>6. Para finalizar, se hizo merge de todas las ramas con la rama principal <code>main</code>.
-<img src='./labImg/ramasMerge.jpeg'>
-</td></tr>
-<tr><td>II. SOLUCIÓN DEL CUESTIONARIO<br>
-A. ¿Por qué Git es una herramienta importante en el curso de Programación Web 2?<br>
-Respuesta: <br>
-Porque facilita la creación de programas de manera grupal, promoviendo el trabajo colaborativo, pudiendo trabajar asíncronamente en la creación y ejecución de proyectos, además de otorgar infinitas posibilidades con la revisión y el seguimiento del programa entre los miembros de un grupo, y proporcionar una relación docente - estudiante clara y sencilla.</td></tr>
-<tr><td>III. CONCLUSIONES
-<ul>
-<li>
-Git es una herramienta bastante útil para el aprendizaje, ya que permite el fácil intercambio de información entre programadores de todo el mundo.
-</li>
-<li>
-El trabajo en equipo en Git es óptimo. Si bien puede ser algo complejo al principio, cuando se llega a entender las conexiones, el funcionamiento entre las ramas, el trabajo grupal se torna sencillo, agradable y funcional.
-</li>
-</ul>
-</td></tr>
-</tbody>
-</table>
-<table>
-<theader>
-<tr><th>RETROALIMENTACIÓN GENERAL</th></tr>
-</theader>
-<tbody>
-<tr><td>I. RETROALIMENTACIÓN:</td></tr>
-<tbody>
-</table>
-<table>
-<theader>
-<tr><th>REFERENCIAS Y BIBLIOGRAFÍA</th></tr>
-</theader>
-<tbody>
-<tr><td>I. BIBLIOGRAFÍA
-<ul>
-<li>https://git-scm.com/book/es/v2</li>
-</ul>
-</td></tr>
-</tbody>
-</table>
